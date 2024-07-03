@@ -68,3 +68,38 @@ h4 {
 #intro a:hover {
     color: var(--hotmag);
 }
+
+.gradient {
+    height: 0.07rem;
+    background: linear-gradient(rgba(255, 23, 228, 1), rgba(134, 251, 251, 1) 100%);
+}
+
+.section-plum {
+    background-color: var(--plum);
+}
+
+#contact {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+#contact h2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.button {
+    background-color: var(--magenta);
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--mono);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: var(--hotmag);
+    color: var(--white);
+}
