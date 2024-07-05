@@ -38,6 +38,10 @@ h4 {
     box-sizing: inherit;
 }
 
+img {
+    width: 100%;
+}
+
 #intro {
     padding: 4rem 1rem 10rem 1rem;
     max-width: 1200px;
@@ -150,6 +154,109 @@ nav [class*="fa-"] {
 nav h1 [class*="fa-"] {
     font-size: 100%;
     color: var(--aqua);
+}
+
+.section-blue {
+    background-color: var(--dkblue);
+}
+
+#projects {
+    padding: 4rem 1rem;
+    font-family: var(--sans);
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+    color: var(--aqua);
+}
+
+#projects h4 {
+    font-size: 1rem;
+    font-family: var(--mono);
+}
+
+#projects .blackbox {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#projects .blackbox a {
+    color: var(--magenta);
+}
+
+#projects .blackbox a:hover {
+    text-decoration: none;
+    color: var(--hotmag);
+}
+
+#projects ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+}
+
+#projects img {
+    padding: 1rem;
+    margin: 2rem 0 4rem 0;
+    border-top: 1px var(--aqua) solid;
+    border-left: 1px var(--aqua) solid;
+    border-radius: 25px;
+}
+
+@media (min-width: 800px) {
+    article {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    #projects {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #projects .text {
+        grid-column: 5/11;
+        grid-row: 1/2;
+        order: 2;
+        text-align: right;
+    }
+    #projects ul {
+        justify-content: flex-end;
+    }
+
+    #projects img {
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+
+    #projects .reverse .text {
+        grid-column: 1/6;
+        grid-row: 1/2;
+        /* order: 2; */
+        text-align: left;
+    }
+    #projects .reverse ul {
+        justify-content: flex-end;
+    }
+
+    #projects .reverse img {
+        grid-column: 5/11;
+        grid-row: 1/2;
+    }
 }
 
 @media (min-width: 850px) {
