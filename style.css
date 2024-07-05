@@ -103,3 +103,64 @@ h4 {
     background-color: var(--hotmag);
     color: var(--white);
 }
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 4rem 1rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    font-family: var(--mono);
+    font-size: 1.5rem;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul a:hover,
+nav [class*="fa-"] :hover {
+    color: var(--magenta);
+}
+
+nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+}
+
+nav h1 [class*="fa-"] {
+    font-size: 100%;
+    color: var(--aqua);
+}
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav ul li:first-child {
+        flex-basis: auto;
+        flex-grow: 1;
+        text-align: left;
+    }
+}
